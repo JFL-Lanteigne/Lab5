@@ -88,19 +88,17 @@ namespace UnitTests
 			Assert::IsTrue(compareResult);
 		}
 
-		//TEST_METHOD(given_2_points_to_compare_difference_when_they_are_equal_then_should_return_false)
-		//{
-		//	//arrange
-		//	Point point1(1, 1);
-		//	Point point2(1, 1);
+		TEST_METHOD(given_2_points_to_compare_difference_when_they_are_equal_then_should_return_false)
+		{
+			//arrange
+			Point point1(1, 1);
+			Point point2(1, 1);
 
-		//	//action 
-		//	bool compareResult = point1 != point2;
+			//action 
+			bool compareResult = point1 != point2;
 
-		//	//assert
-		//	Assert::IsFalse(compareResult);
-		//}
-
-
+			//assert
+			Assert::IsFalse(compareResult);
+		}
 	};
 }
