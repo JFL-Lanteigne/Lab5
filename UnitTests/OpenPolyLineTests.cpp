@@ -9,20 +9,20 @@ namespace UnitTests
 	{
 	public:
 		
-		//FakeWindowAPI * fakeWindowAPI;
-		//OpenPolyline * openPolyLine;
+		FakeWindowAPI * fakeWindowAPI;
+		OpenPolyline * openPolyLine;
 
-		//TEST_METHOD_INITIALIZE(OpenPolylineTests_Initialize)
-		//{
-		//	fakeWindowAPI = new FakeWindowAPI(640,480,"Super beau dessin");
-		//	openPolyLine = new OpenPolyline(*fakeWindowAPI);
-		//}
+		TEST_METHOD_INITIALIZE(OpenPolylineTests_Initialize)
+		{
+			fakeWindowAPI = new FakeWindowAPI(640,480,"Super beau dessin");
+			openPolyLine = new OpenPolyline(*fakeWindowAPI);
+		}
 
-		//TEST_METHOD_CLEANUP(OpenPolylineTests_CleanUp)
-		//{
-		//	delete fakeWindowAPI;
-		//	delete openPolyLine;
-		//}
+		TEST_METHOD_CLEANUP(OpenPolylineTests_CleanUp)
+		{
+			delete fakeWindowAPI;
+			delete openPolyLine;
+		}
 
 		//TEST_METHOD(draw_openPolLine_should_draw_lines_on_windowAPI)
 		//{
