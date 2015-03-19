@@ -106,5 +106,24 @@ namespace UnitTests
 		//	//Assert
 		//	Assert::IsTrue(exceptionThrown);
 		//}
+
+		//TEST_METHOD(add_point_to_circle_should_throw_exception)
+		//{
+		//	//Arrange
+
+		//	//Action
+		//	bool exceptionThrown = false;
+		//	try
+		//	{
+		//		circle->add(Point(2, 2));
+		//	}
+		//	catch (std::runtime_error ex)
+		//	{
+		//		exceptionThrown = true;
+		//	}
+
+		//	//Assert
+		//	Assert::IsTrue(exceptionThrown);
+		//}
 	};
 }

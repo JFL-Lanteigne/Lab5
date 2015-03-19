@@ -20,12 +20,12 @@ namespace ShapeLibrary
 	//	Color getFillColor();
 	//	Point getPoint(int _index);
 	//	int getNumberOfPoints();
-		void add(Point& point);
+		void add(Point& _point);
 
 	private:
 		IWindowAPI* windowAPI;
-	//	vector<Point> point;
-	//	Color lineColor;
-	//	Color fillColor;
+		vector<Point> point;
+		Color lineColor;
+		Color fillColor;
 	};
 }
