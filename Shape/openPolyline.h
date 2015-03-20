@@ -9,13 +9,9 @@ namespace ShapeLibrary
 		OpenPolyline(IWindowAPI& _windowAPI);
 		virtual ~OpenPolyline();
 		virtual void draw();
-		/*void setLineColor(Color& lineColor);
-		Color getLineColor();
-		void setFillColor(Color& fillColor);
-		Color getFillColor();
-		Point getPoint(int _index);
-		int getNumberOfPoints();*/
-		void add(Point& point);
+		//Point getPoint(int _index);
+		//int getNumberOfPoints();
+		virtual void add(Point& point);
 
 	private:
 		IWindowAPI* windowAPI;

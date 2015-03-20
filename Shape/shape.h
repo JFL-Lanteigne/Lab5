@@ -20,7 +20,7 @@ namespace ShapeLibrary
 		const Color& getFillColor() const;
 	//	Point getPoint(int _index);
 	//	int getNumberOfPoints();
-		void add(Point& _point);
+		virtual void add(Point& _point);
 
 	private:
 		IWindowAPI* windowAPI;
