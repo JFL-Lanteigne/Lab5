@@ -17,11 +17,11 @@ void Rectangle::draw()
 {
 	if (positionSet == false) throw runtime_error("La position n'a pas été initialisée");
 
-	windowAPI->setDrawingColor(fillColor);
-	windowAPI->fillRectangle(*position, width, height);
-
 	windowAPI->setDrawingColor(lineColor);
 	windowAPI->drawRectangle(*position, width, height);
+
+	windowAPI->setDrawingColor(fillColor);
+	windowAPI->fillRectangle(*position, width, height);
 }
 
 void Rectangle::setPosition(Point& _point)
