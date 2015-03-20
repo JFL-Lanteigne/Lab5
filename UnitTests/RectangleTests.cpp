@@ -65,84 +65,84 @@ namespace UnitTests
 			Assert::IsTrue(fakeWindowAPI->drawRectangle_hasBeenCalled());
 		}
 
-		//TEST_METHOD(set_negative_width_should_throw_excpetion)
-		//{
-		//	//Arrange
-		//	const int INVALID_WIDTH = -1;
+		TEST_METHOD(set_negative_width_should_throw_excpetion)
+		{
+			//Arrange
+			const int INVALID_WIDTH = -1;
 
-		//	//Action
-		//	bool exceptionThrown = false;
-		//	try
-		//	{
-		//		rectangle->setWidth(INVALID_WIDTH);
+			//Action
+			bool exceptionThrown = false;
+			try
+			{
+				rectangle->setWidth(INVALID_WIDTH);
 
-		//	}
-		//	catch (std::invalid_argument ex)
-		//	{
-		//		exceptionThrown = true;
-		//	}
+			}
+			catch (std::invalid_argument ex)
+			{
+				exceptionThrown = true;
+			}
 
-		//	//Assert
-		//	Assert::IsTrue(exceptionThrown);
-		//}
+			//Assert
+			Assert::IsTrue(exceptionThrown);
+		}
 
-		//TEST_METHOD(set_negative_height_should_throw_excpetion)
-		//{
-		//	//Arrange
-		//	const int INVALID_HEIGHT = -1;
+		TEST_METHOD(set_negative_height_should_throw_excpetion)
+		{
+			//Arrange
+			const int INVALID_HEIGHT = -1;
 
-		//	//Action
-		//	bool exceptionThrown = false;
-		//	try
-		//	{
-		//		rectangle->setWidth(INVALID_HEIGHT);
-		//	}
-		//	catch (std::invalid_argument ex)
-		//	{
-		//		exceptionThrown = true;
-		//	}
+			//Action
+			bool exceptionThrown = false;
+			try
+			{
+				rectangle->setWidth(INVALID_HEIGHT);
+			}
+			catch (std::invalid_argument ex)
+			{
+				exceptionThrown = true;
+			}
 
-		//	//Assert
-		//	Assert::IsTrue(exceptionThrown);
-		//}
+			//Assert
+			Assert::IsTrue(exceptionThrown);
+		}
 
-		//TEST_METHOD(no_position_set_should_throw_exception)
-		//{
-		//	//Arrange
-		//	rectangle->setHeight(10);
+		TEST_METHOD(no_position_set_should_throw_exception)
+		{
+			//Arrange
+			rectangle->setHeight(10);
 
-		//	//Action
-		//	bool exceptionThrown = false;
-		//	try
-		//	{
-		//		rectangle->draw();
-		//	}
-		//	catch (std::runtime_error ex)
-		//	{
-		//		exceptionThrown = true;
-		//	}
+			//Action
+			bool exceptionThrown = false;
+			try
+			{
+				rectangle->draw();
+			}
+			catch (std::runtime_error ex)
+			{
+				exceptionThrown = true;
+			}
 
-		//	//Assert
-		//	Assert::IsTrue(exceptionThrown);
-		//}
+			//Assert
+			Assert::IsTrue(exceptionThrown);
+		}
 
-		//TEST_METHOD(add_point_to_rectangle_should_throw_exception)
-		//{
-		//	//Arrange
+		TEST_METHOD(add_point_to_rectangle_should_throw_exception)
+		{
+			//Arrange
 
-		//	//Action
-		//	bool exceptionThrown = false;
-		//	try
-		//	{
-		//		rectangle->add(Point(2, 2));
-		//	}
-		//	catch (std::runtime_error ex)
-		//	{
-		//		exceptionThrown = true;
-		//	}
+			//Action
+			bool exceptionThrown = false;
+			try
+			{
+				rectangle->add(Point(2, 2));
+			}
+			catch (std::runtime_error ex)
+			{
+				exceptionThrown = true;
+			}
 
-		//	//Assert
-		//	Assert::IsTrue(exceptionThrown);
-		//}
+			//Assert
+			Assert::IsTrue(exceptionThrown);
+		}
 	};
 }

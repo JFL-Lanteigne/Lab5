@@ -21,5 +21,6 @@ namespace ShapeLibrary
 		int width;
 		Color lineColor;
 		Color fillColor;
+		bool positionSet = false;
 	};
 }
