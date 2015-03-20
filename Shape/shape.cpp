@@ -12,6 +12,26 @@ Shape::~Shape()
 
 }
 
+void Shape::setLineColor(Color& _lineColor)
+{
+	lineColor = _lineColor;
+}
+
+const Color& Shape::getLineColor() const
+{
+	return lineColor;
+}
+
+void Shape::setFillColor(Color& _fillColor)
+{
+	fillColor = _fillColor;
+}
+
+const Color& Shape::getFillColor() const
+{
+	return fillColor;
+}
+
 void Shape::add(Point& _point)
 {
 	point.push_back(_point);
