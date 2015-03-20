@@ -67,63 +67,63 @@ namespace UnitTests
 		}
 
 
-		//TEST_METHOD(set_negative_radius_should_throw_excpetion)
-		//{
-		//	//Arrange
-		//	const int INVALID_RADIUS = -1;
+		TEST_METHOD(set_negative_radius_should_throw_excpetion)
+		{
+			//Arrange
+			const int INVALID_RADIUS = -1;
 
-		//	//Action
-		//	bool exceptionThrown = false;
-		//	try
-		//	{
-		//		Circle circle(*fakeWindowAPI);
-		//		circle.setRadius(INVALID_RADIUS);
-		//	}
-		//	catch (std::invalid_argument ex)
-		//	{
-		//		exceptionThrown = true;
-		//	}
+			//Action
+			bool exceptionThrown = false;
+			try
+			{
+				Circle circle(*fakeWindowAPI);
+				circle.setRadius(INVALID_RADIUS);
+			}
+			catch (std::invalid_argument ex)
+			{
+				exceptionThrown = true;
+			}
 
-		//	//Assert
-		//	Assert::IsTrue(exceptionThrown);
-		//}
+			//Assert
+			Assert::IsTrue(exceptionThrown);
+		}
 
-		//TEST_METHOD(draw_circle_with_no_center_should_throw_exception)
-		//{
-		//	//Arrange
+		TEST_METHOD(draw_circle_with_no_center_should_throw_exception)
+		{
+			//Arrange
 
-		//	//Action
-		//	bool exceptionThrown = false;
-		//	try
-		//	{
-		//		circle->draw();
-		//	}
-		//	catch (std::runtime_error ex)
-		//	{
-		//		exceptionThrown = true;
-		//	}
+			//Action
+			bool exceptionThrown = false;
+			try
+			{
+				circle->draw();
+			}
+			catch (std::runtime_error ex)
+			{
+				exceptionThrown = true;
+			}
 
-		//	//Assert
-		//	Assert::IsTrue(exceptionThrown);
-		//}
+			//Assert
+			Assert::IsTrue(exceptionThrown);
+		}
 
-		//TEST_METHOD(add_point_to_circle_should_throw_exception)
-		//{
-		//	//Arrange
+		TEST_METHOD(add_point_to_circle_should_throw_exception)
+		{
+			//Arrange
 
-		//	//Action
-		//	bool exceptionThrown = false;
-		//	try
-		//	{
-		//		circle->add(Point(2, 2));
-		//	}
-		//	catch (std::runtime_error ex)
-		//	{
-		//		exceptionThrown = true;
-		//	}
+			//Action
+			bool exceptionThrown = false;
+			try
+			{
+				circle->add(Point(2, 2));
+			}
+			catch (std::runtime_error ex)
+			{
+				exceptionThrown = true;
+			}
 
-		//	//Assert
-		//	Assert::IsTrue(exceptionThrown);
-		//}
+			//Assert
+			Assert::IsTrue(exceptionThrown);
+		}
 	};
 }

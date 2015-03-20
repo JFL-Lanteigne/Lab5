@@ -19,5 +19,6 @@ namespace ShapeLibrary
 		int radius;
 		Color lineColor;
 		Color fillColor;
+		bool centerSet = false;
 	};
 }
