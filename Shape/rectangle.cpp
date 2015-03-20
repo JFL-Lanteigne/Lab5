@@ -16,6 +16,7 @@ Rectangle::~Rectangle()
 void Rectangle::draw()
 {
 	windowAPI->setDrawingColor(lineColor);
+	windowAPI->fillRectangle(*position, width, height);
 
 	windowAPI->drawRectangle(*position, width, height);
 }

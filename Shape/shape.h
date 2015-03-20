@@ -14,9 +14,9 @@ namespace ShapeLibrary
 		Shape(IWindowAPI& _windowAPI);
 		virtual ~Shape();
 		virtual void draw() =0;
-		void setLineColor(Color& _lineColor);
+		void setLineColor(Color _lineColor);
 		const Color& getLineColor() const;
-		void setFillColor(Color& _fillColor);
+		void setFillColor(Color _fillColor);
 		const Color& getFillColor() const;
 	//	Point getPoint(int _index);
 	//	int getNumberOfPoints();

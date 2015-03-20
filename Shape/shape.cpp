@@ -12,7 +12,7 @@ Shape::~Shape()
 
 }
 
-void Shape::setLineColor(Color& _lineColor)
+void Shape::setLineColor(Color _lineColor)
 {
 	lineColor = _lineColor;
 }
@@ -22,7 +22,7 @@ const Color& Shape::getLineColor() const
 	return lineColor;
 }
 
-void Shape::setFillColor(Color& _fillColor)
+void Shape::setFillColor(Color _fillColor)
 {
 	fillColor = _fillColor;
 }
