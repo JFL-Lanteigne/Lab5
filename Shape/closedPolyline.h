@@ -18,7 +18,5 @@ namespace ShapeLibrary
 		vector<Point> point;
 		Color lineColor;
 		Color fillColor;
-
-
 	};
 }
