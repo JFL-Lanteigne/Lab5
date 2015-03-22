@@ -17,7 +17,7 @@ namespace ShapeLibrary
 		IWindowAPI* windowAPI;
 		vector<Point> point;
 		float slope;
-		float yIntersect;
+		float yIntercept;
 		Color lineColor;
 		Color fillColor;
 		bool validatePoint(Point& point);
