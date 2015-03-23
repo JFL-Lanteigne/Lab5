@@ -44,46 +44,46 @@ namespace UnitTests
 			//Assert
 			Assert::IsTrue(exceptionThrown);
 		}
-		//
-		//TEST_METHOD(add_point_to_a_polygon_that_cross_preivous_lines_should_throw_excpetion)
-		//{
-		//	//Arrange
-		//	polygon->add(Point(25, 25));
-		//	polygon->add(Point(25, 75));
-		//	polygon->add(Point(75, 100));
+		
+		TEST_METHOD(add_point_to_a_polygon_that_cross_preivous_lines_should_throw_excpetion)
+		{
+			//Arrange
+			polygon->add(Point(25, 25));
+			polygon->add(Point(25, 75));
+			polygon->add(Point(75, 100));
 
-		//	//Action
-		//	bool exceptionThrown = false;
+			//Action
+			bool exceptionThrown = false;
 
-		//	try
-		//	{
-		//		polygon->add(Point(0, 50));
-		//	}
-		//	catch (runtime_error ex)
-		//	{
-		//		exceptionThrown = true;
-		//	}
+			try
+			{
+				polygon->add(Point(0, 50));
+			}
+			catch (runtime_error ex)
+			{
+				exceptionThrown = true;
+			}
 
-		//	//Assert
-		//	Assert::IsTrue(exceptionThrown);
-		//}
+			//Assert
+			Assert::IsTrue(exceptionThrown);
+		}
 
-		//TEST_METHOD(draw_Poloygon_should_draw_lines_on_windowAPI)
-		//{
-		//	//Arrange	
-		//	const int NOMBRE_DE_LIGNE_DESSINEES = 4;
+		TEST_METHOD(draw_Poloygon_should_draw_lines_on_windowAPI)
+		{
+			//Arrange	
+			const int NOMBRE_DE_LIGNE_DESSINEES = 4;
 
-		//	polygon->add(Point(100, 100));
-		//	polygon->add(Point(150, 200));
-		//	polygon->add(Point(250, 250));
-		//	polygon->add(Point(175, 175));
+			polygon->add(Point(100, 100));
+			polygon->add(Point(150, 200));
+			polygon->add(Point(250, 250));
+			polygon->add(Point(175, 175));
 
-		//	//Action
-		//	polygon->draw();
+			//Action
+			polygon->draw();
 
-		//	//Assert
-		//	Assert::IsTrue(fakeWindowAPI->setDrawingColor_hasBeenCalled());
-		//	Assert::AreEqual(NOMBRE_DE_LIGNE_DESSINEES, fakeWindowAPI->drawLine_getnumberOfCall());
-		//}
+			//Assert
+			Assert::IsTrue(fakeWindowAPI->setDrawingColor_hasBeenCalled());
+			Assert::AreEqual(NOMBRE_DE_LIGNE_DESSINEES, fakeWindowAPI->drawLine_getnumberOfCall());
+		}
 	};
 }
