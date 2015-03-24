@@ -32,9 +32,19 @@ const Color& Shape::getFillColor() const
 	return fillColor;
 }
 
-void Shape::add(Point& _point)
+void Shape::add(const Point& _point)
 {
 	point.push_back(_point);
+}
+
+Point Shape::getPoint(int _index)
+{
+	return point.at(_index);
+}
+
+int Shape::getNumberOfPoints()
+{
+	return point.size();
 }
 
 
